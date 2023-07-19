@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" value="Moscow"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <span class="name" id="name" contenteditable="true" placeholder="[Enter name]"></span>
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="settings-button"></button>
+
+    <div class="settings-popup">
+      <div class="settings-container">
+        <form class="settings-form">
+
+          <div class="radio-container">
+            <div class="form_radio">
+              <input id="en" type="radio" name="lang" value="en" checked>
+              <label class="lang" for="en">English</label>
+            </div>
+            <div class="form_radio">
+              <input id="ru" type="radio" name="lang" value="ru">
+              <label class="lang" for="ru">Russian</label>
+            </div>
+          </div>
+
+          <div class="switch-container">
+            <label class="switch-item switch-time" id="time">
+              <p class="switch-text">Time</p>
+              <div class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </div>
+            </label>
+
+            <label class="switch-item switch-date" id="date">
+              <p class="switch-text">Date</p>
+              <div class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </div>
+            </label>
+
+            <label class="switch-item switch-greeting" id="greeting-container">
+              <p class="switch-text">Greeting</p>
+              <div class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </div>
+            </label>
+
+            <label class="switch-item switch-quotes" id="quote-container">
+              <p class="switch-text">Quotes</p>
+              <div class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </div>
+            </label>
+
+            <label class="switch-item switch-audio" id="player">
+              <p class="switch-text">Audio</p>
+              <div class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </div>
+            </label>
+
+            <label class="switch-item switch-weather" id="weather">
+              <p class="switch-text">Weather</p>
+              <div class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </div>
+            </label>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="quote-container">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
